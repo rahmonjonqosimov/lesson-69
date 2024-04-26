@@ -1,0 +1,62 @@
+.banner {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    .banner__card {
+      width: 100%;
+      position: relative;
+      height: 280px;
+      border-radius: 8px;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      .text {
+        position: absolute;
+        top: 80px;
+        left: 50px;
+        h4 {
+          font-family: Quicksand;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 28.8px;
+          text-align: left;
+          color: #253d4e;
+          max-width: 240px;
+          height: 100px;
+        }
+        button {
+          padding: 8px 16px;
+          border-radius: 4px;
+          border: none;
+          background-color: #f53e32;
+          color: #fff;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .banner__wrapper {
+      display: flex;
+      flex-direction: column;
+      .banner__card {
+        .text {
+          top: 40px;
+          left: 20px;
+          h4 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .banner__card {
+      height: auto;
+    }
+  }
+}

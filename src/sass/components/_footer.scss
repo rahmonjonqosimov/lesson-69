@@ -1,0 +1,112 @@
+.footer {
+  padding: 100px 0;
+  background: #f7f7f8;
+  a {
+    text-decoration: none;
+  }
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    justify-content: space-between;
+    .first {
+      display: flex;
+      flex-direction: column;
+      max-width: 394px;
+      width: 100%;
+
+      p {
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24.5px;
+        letter-spacing: 0.47999998927116394px;
+        text-align: left;
+        color: #7a7a7a;
+      }
+      span {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 20px;
+        svg {
+          color: #f53e32;
+          font-size: 20px;
+        }
+      }
+    }
+    ul {
+      list-style: none;
+      h3 {
+        font-family: Arial;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23.4px;
+        letter-spacing: 0.47999998927116394px;
+        text-align: left;
+        color: #000;
+        margin-bottom: 20px;
+      }
+      li {
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.47999998927116394px;
+        text-align: left;
+        color: #777777;
+        cursor: pointer;
+        margin-bottom: 18px;
+        transition: 0.3s;
+        &:hover {
+          color: #3bb77e;
+        }
+      }
+    }
+    .images {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      img {
+        width: 73px;
+        height: 73px;
+        cursor: pointer;
+      }
+    }
+    .btns {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      button {
+        background: transparent;
+        padding: 10px;
+        border: 1px solid #e1dfdf;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    &__content {
+      flex-direction: column;
+    }
+  }
+}
+.footer__h6 {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 0.47999998927116394px;
+  text-align: center;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  background: #f7f7f8;
+}
